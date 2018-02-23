@@ -51,27 +51,27 @@
 
 <body>
 	<div class="buck">
-		<audio id="beep-one" style="display:none;" controls="controls" preload="auto">
+		<audio id="swing-one" style="display:none;" controls="controls" preload="auto">
 			<source src="audio/b.mp3"></source>
 			Your browser isn't invited for super fun time.
 		</audio>
 
-		<a id="rimshot-hover-sound" class="bucks-face"></a>
+		<a id="swing-hover" class="bucks-face"></a>
 	</div>
 </body>
 
 	<script>
-		var beepOne = $("#beep-one")[0];
-			$("#rimshot-hover-sound")
+		var swingOne = $("#swing-one")[0];
+			$("#swing-hover")
 			.mousedown(function() {
-				beepOne.play();
+				swingOne.play();
 			});
 
-		var rimShotAudio = document.getElementById("beep-one"); 
+		var swingAudio = document.getElementById("swing-one"); 
 
-		function playRim() { 
-			rimShotAudio.play(); 
+		function playSwing() { 
+			swingAudio.play(); 
 		} 
-		item.addEventListener('mousedown', rimShotAudio.playRim, false);
+		item.addEventListener('mousedown', swingAudio.playSwing, false);
 	</script>	
 </html>
